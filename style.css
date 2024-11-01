@@ -288,15 +288,15 @@ section {
 }
 
 .input-box input {
-  width: 100%; /* Make the input take the full width of the container */
-  padding: 2rem 8rem; /* Adjust left padding for icon */
-  font-size: 1.5rem; /* Adjust font-size if too large */
+  width: 100%;
+  padding: 2rem 8rem;
+  font-size: 1.5rem;
   border-radius: 3rem;
   border: 2px solid black;
-  box-sizing: border-box; /* Ensure padding does not expand input */
+  box-sizing: border-box;
 }
 .input-box input::placeholder {
-  font-size: 2rem; /* Match font size of input */
+  font-size: 2rem;
 }
 .input {
   position: relative;
