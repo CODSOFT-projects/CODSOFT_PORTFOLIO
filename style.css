@@ -118,13 +118,13 @@ section {
 
 .info-box h3 {
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 400;
   opacity: 0.8;
 }
 
 .info-box h1 {
   font-size: 4rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .info-box span {
@@ -282,13 +282,15 @@ section {
 }
 
 .input-box input {
+  width: 100%; /* Make the input take the full width of the container */
+  padding: 2rem 8rem; /* Adjust left padding for icon */
+  font-size: 1.5rem; /* Adjust font-size if too large */
   border-radius: 3rem;
   border: 2px solid black;
-  padding: 2rem 8rem;
-  font-size: 3rem;
+  box-sizing: border-box; /* Ensure padding does not expand input */
 }
 .input-box input::placeholder {
-  font-size: 3rem;
+  font-size: 2rem; /* Match font size of input */
 }
 .input {
   position: relative;
@@ -325,4 +327,107 @@ footer ul li a {
 copyright {
   font-size: 300;
   margin-top: 2rem;
+}
+@media (max-width: 1280px) {
+  header {
+    padding: 1rem 2rem;
+    gap: 2rem;
+  }
+  .about .about-container {
+    gap: 3rem;
+  }
+  .experience-info {
+    flex-direction: column;
+  }
+  .input-box .input {
+    padding: 2rem 1rem;
+    font-size: 2.5rem;
+  }
+  .input input::placeholder {
+    font-size: 1.6rem;
+  }
+  .input-box i {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    gap: 1rem;
+    padding: 1rem 1rem;
+  }
+  header .logo {
+    font-size: 1rem;
+  }
+  header .visit-btn {
+    display: none;
+  }
+  .about-container {
+    flex-direction: column;
+  }
+  .input-box input {
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+  }
+  .input input::placeholder {
+    font-size: 1.5rem;
+  }
+  .input-box i {
+    display: none;
+  }
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .experience-info img {
+    width: 70vw;
+  }
+}
+@media (max-width: 600px) {
+  header #menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 3rem;
+    display: none;
+    cursor: pointer;
+  }
+  .nav-links li {
+    margin-top: 1.5rem;
+    padding: 1rem;
+  }
+  .nav-links.active {
+    display: block;
+  }
+  header {
+    padding: 1rem 1rem;
+    gap: 8rem;
+  }
+  header .logo {
+    font-size: 1.5rem;
+  }
+  .about-container img {
+    width: 70vw;
+  }
+  .input-box input {
+    padding: 0.5rem 3rem;
+    width: 80%;
+    font-size: 1.5rem;
+  }
+  .input-box input::placeholder {
+    font-size: 1.5rem;
+  }
+  footer ul {
+    gap: 1rem;
+  }
 }
