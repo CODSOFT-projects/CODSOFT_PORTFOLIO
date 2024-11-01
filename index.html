@@ -20,12 +20,19 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
       <i class="fa-solid fa-bars" id="menu-icon"></i>
-      <button class="visit-btn">Visit Github</button>
+      <a
+        href="https://github.com/absra47"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="visit-btn"
+      >
+        Visit GitHub
+      </a>
     </header>
 
     <section id="about" class="about">
       <div class="about-container">
-        <img src="IMG_20241031_183249_736.jpg" alt="" />
+        <img src="./assets/img/IMG_20241031_183249_736.jpg" alt="" />
 
         <div class="info-box">
           <div class="text">
@@ -35,12 +42,23 @@
           </div>
 
           <div class="btn-group">
-            <div class="btn">Download CV</div>
-            <div class="btn">Contact</div>
+            <a href="./assets/cv/Resume.pdf" download="resume.pdf" class="btn">
+              Download CV
+            </a>
+            <div
+              class="btn"
+              onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })"
+            >
+              Contact
+            </div>
           </div>
           <div class="socials">
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://github.com/absra47" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/absragirma/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -86,7 +104,7 @@
             </p>
           </div>
         </div>
-        <img src="055A4322.JPG" alt="" />
+        <img src="./assets/img/055A4322.JPG" alt="" />
       </div>
     </section>
     <section id="projects" class="projects">
@@ -136,11 +154,12 @@
     <section id="contact" class="contact">
       <div class="input-box">
         <h2 class="section-title">Contact Me</h2>
-        <div class="input">
-          <input type="text" placeholder="absra12c@gmail.com" />
-          <i class="fa-solid fa-envelope"></i>
-        </div>
-        <div class="btn">Submit</div>
+        <a href="tel:+251973083862" class="btn"> Call Me </a>
+        <a href="mailto:absra12c@example.com" class="btn">Email</a>
+        <!-- <div class="input">
+            <input type="text" placeholder="absra12c@gmail.com" />
+            <i class="fa-solid fa-envelope"></i>
+          </div> -->
       </div>
     </section>
     <footer>
